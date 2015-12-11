@@ -1,0 +1,12 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		div(class="container-fluid")
+			block content
+
+	script(src="/vendor/jquery/dist/jquery.min.js")
+	block footer_script

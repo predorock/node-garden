@@ -1,0 +1,20 @@
+{
+  "name": "nodeGarden",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Marco Predari <predorock@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ]
+}
