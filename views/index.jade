@@ -1,8 +1,9 @@
 extends layout
 
 block content
-	div(class="row")
-		div(class="col-md-12")
-			h1(class="title") Welcome to the Garden
-			a(href="/login") Login
-			img(src="images/lambda.png" class="img-responsive")
+	div(id="home-page")
+		div(class="row")
+			div(class="col-md-4 col-md-offset-4")
+				h1(class="title") Welcome to the Garden
+				a(href="/login", class="btn btn-default btn-lg btn-block") Login
+				a(href="/signup", class="btn btn-default btn-lg btn-block") Registrati

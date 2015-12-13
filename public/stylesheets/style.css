@@ -1,3 +1,11 @@
+/* HOME PAGE */
+body{
+	background-image: url("/images/lambda.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center top;
+}
+
 /* GAME PAGE */
 #game-lobby-page .page-title{
 	text-align: center;
