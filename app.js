@@ -46,7 +46,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // routes ======================================================================
 app.use('/', routes);
-app.use('/', game);
+app.use('/game', game);
 
 require('./routes/login.js')(app, passport); // load our routes and pass in our app and fully configured passport
 

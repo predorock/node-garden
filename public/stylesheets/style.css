@@ -1,3 +1,43 @@
-#login-container{
+/* GAME PAGE */
+#game-lobby-page .page-title{
+	text-align: center;
+	border-bottom: 2px solid black;
+	padding: 5px;
+}
+
+#game-lobby-page .lobby-actions{
+	text-align: center;
+}
+
+#game-field-page table{
+	margin: 20px;
+	border-collapse:separate;
+	border: 3px solid black;
+	border-radius: 5px;
+}
+
+#game-field-page table td{
+	position: relative;
+	width: 25px;
+	text-align: center;
+}
+
+#game-field-page table tr{
+	border: px solid black;
+}
+
+#game-field-page .fresh-cell{
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	background-color: cornflowerblue;
+	border: 2px solid black;	
+}
+
+/* LOGIN PAGE */
+#login-container {
 	padding: 10px;
 }
+
+
+
