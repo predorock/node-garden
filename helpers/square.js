@@ -1,10 +1,10 @@
 
-var Coors = require("./coors");
+var Coords = require("./coords");
 
 function Square(i, nx, ny){
 	this.info = i;
 	this.hit = false;
-	this.coords = new Coors(nx,ny);
+	this.coords = new Coords(nx,ny);
 }
 
 //toString
