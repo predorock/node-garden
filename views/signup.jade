@@ -3,7 +3,7 @@ extends layout
 block content
     div(class="row")
         div(class="col-md-4 col-md-offset-4", id="signup-container")
-            h3 Registrati per Giocare
+            h2 Registrati per Giocare
             form(name="user-registration", action="/signup", method="POST")
                 div(class="form-group")
                     label(for='username') Username
@@ -15,3 +15,8 @@ block content
                     label(for='password') Nome Giocatore
                     input#player-name(type="text", name="player-name", class="form-control")
                 button(type="submit", class="btn btn-default") Registrati
+            hr
+            p Hai già un account ?&nbsp;
+                a(href="/login") Login
+            p Or go&nbsp;
+                a(href="/") home
