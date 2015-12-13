@@ -1,0 +1,9 @@
+div
+	each row in garden
+		div
+			each square in row	
+				if square.state
+					span#hit-square foo
+				else
+					span#no-hit-square 
+						img(src="images/square.png")

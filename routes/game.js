@@ -8,11 +8,6 @@ router.get('/', function(req, res, next) {
     });
 });
 
-router.get('/game-init', function(req, res, next) {
-    field.initGarden();
-    res.send("Test create field, check node console");
-});
-
 router.get('/field', function(req, res, next) {
     res.render("game/field", {
         title : "Game Field",
