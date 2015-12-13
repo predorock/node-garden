@@ -1,5 +1,5 @@
 var _ = require('underscore');
-var Square = require('../helpers/square');
+var Square = require('./square');
 
 var config = {
   rows: _.range(16),

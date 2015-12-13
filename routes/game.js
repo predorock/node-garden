@@ -9,9 +9,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/field', function(req, res, next) {
+    var f =field.initGarden();
+    console.log(f);
     res.render("game/field", {
         title : "Game Field",
-        field : field.initGarden()
+        field : f
     });
 });
 

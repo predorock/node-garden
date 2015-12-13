@@ -9,30 +9,33 @@
 	text-align: center;
 }
 
-#game-field-page table{
+/* FIELD PAGE */
+
+#game-field-page .field-container{
 	margin: 20px;
 	border-collapse:separate;
-	border: 3px solid black;
+	border: 2px solid black;
 	border-radius: 5px;
 }
 
-#game-field-page table td{
-	position: relative;
-	width: 25px;
-	text-align: center;
-}
-
-#game-field-page table tr{
-	border: px solid black;
-}
-
-#game-field-page .fresh-cell{
-	position: relative;
+.field-row{
 	width: 100%;
-	display: inline-block;
-	background-color: cornflowerblue;
-	border: 2px solid black;	
+	display: table;
 }
+
+.field-cell{
+	display:table-cell;
+	border: 2px solid black;
+}
+
+.fresh-square{
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	background-image: url("/images/square.png");
+}
+
 
 /* LOGIN PAGE */
 #login-container {

@@ -1,20 +1,32 @@
 extends ../layout
 
-mixin cell(visible, content)
+mixin cell(el)
     .field-cell
-        if visible
-            span=content
+        if el.hit
+            span=el.info
         else
-            span(class="fresh-cell") &nbsp;
+            span(class="fresh-square")&attributes(el.coords.getAsAttributes()) &nbsp;
 
 block content
     div(id = "game-field-page")
         div(class="row")
-            div(class="col-md-12")
-                table
+            div(class="col-md-4 col-md-offset-4")
+                .field-container
                     each row in field
-                        tr
+                        .field-row
                             each col in row
-                                td
-                                    +cell(false,col)
+                                +cell(col)
 
+
+block footer_scripts
+    script.
+        //event listener on the cells
+        $(".field-cell").click(function(ev){
+            //element who should have the coordinates
+            el = $(this).find('span');
+            //if has coordinates can be hit, else not, it has been already hit
+            if(el.data('x') != undefined && el.data('x') != undefined){
+                //here you can call the api
+                console.log("x : " + el.data('x'),"y : " + el.data('y'));
+            }
+        });
