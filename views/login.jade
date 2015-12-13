@@ -2,7 +2,7 @@ extends layout
 
 block content
 	div(class="row")
-		div(class="col-md-12", id="login-container")
+		div(class="col-md-4 col-md-offset-4", id="login-container")
 			h3 Login
 			form(name="userdata", action="/login", method="POST")
 				div(class="form-group")
@@ -11,7 +11,12 @@ block content
 				div(class="form-group")
 					label(for='password') Password
 					input#password(type="password", name="password", class="form-control")
-				button(type="submit", class="btn btn-default") Invia
+				button(type="submit", class="btn btn-default") Entra
+			hr
+			p Non sei registrato ?&nbsp;
+				a(href="/signup") Registrati
+			p Or go&nbsp;
+				a(href="/") home
 
 block footer_script
 	script(src="js/login.js")
