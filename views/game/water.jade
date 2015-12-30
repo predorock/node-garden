@@ -1,0 +1,23 @@
+extends ./field.jade
+
+mixin cell(el)
+    .field-cell
+        if el.hit
+            span=el.info
+        else
+            button(type="submit"  class="fresh-square")&attributes(el.coords.getAsAttributes()) &nbsp;
+
+block water
+    form(name="userTurn", method="POST")
+        input(type="hidden" name="field" value="#{field}")
+        input(type="hidden" name="x")
+        input(type="hidden" name="y")
+        div#water(class="col-md-6 col-md-offset-3")
+            .field-container
+                each row in field.garden
+                    .field-row
+                        each square in row
+                            +cell(square)
+
+block footer_scripts
+    script(src="/js/field.js")

@@ -7,11 +7,7 @@ block content
                 h2(class="page-title") Welcome to the Garden's Lobby
         div(class="row")
             div(class="col-md-12 lobby-actions")
-                button(class="btn btn-success" id="start" type="button") Start Game
+                form#start-game(action="game/field" method="POST")
+                    button(class="btn btn-success" id="start" type="submit") Start Game
 
 block footer_scripts
-    script.
-        $("button[id=start]").click(function(e){
-            e.preventDefault();
-            console.log("click");
-        });

@@ -24,6 +24,7 @@ body{
 	border-collapse:separate;
 	border: 2px solid black;
 	border-radius: 5px;
+	height: ;
 }
 
 .field-row{
@@ -42,6 +43,7 @@ body{
 	display: inline-block;
 	width: 100%;
 	background-image: url("/images/square.png");
+	background-size: cover;
 }
 
 

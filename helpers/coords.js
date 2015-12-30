@@ -22,4 +22,7 @@ Coords.prototype.getAsAttributes = function(){
     }
 };
 
+Coords.prototype.toString = function(){
+	return this.x + ":" + this.y;
+}
 module.exports = Coords;

@@ -9,7 +9,7 @@ function Square(i, nx, ny){
 
 //toString
 Square.prototype.toString = function(){
-	return "info : " + this.info + " state: " + this.state;
+	return "info : " + this.info + " coords : " + this.coords + "\n";
 }
 
 //Getter coords
@@ -39,17 +39,21 @@ Square.prototype.setInfo = function(i){
 
 //Getter state
 Square.prototype.getState = function(){
-	return this.state;
+	return this.hit;
 }
 
 //Setter state
-Square.prototype.setState = function(s){
-	this.state = s;
+Square.prototype.setHit = function(s){
+	this.hit = true;
+}
+
+Square.prototype.setNohit = function(s){
+	this.hit = false;
 }
 
 //Boolean method
 Square.prototype.isHit = function(){
-	return this.state == "hit";
+	return this.hit;
 }
 
 Square.prototype.isSmallBlue = function(){
